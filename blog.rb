@@ -3,7 +3,7 @@ require "sinatra"
 require "dm-core"
 require "haml"
 
-DataMapper::setup(:default, "sqlite3:blog.sqlite3")
+DataMapper::setup(:default, "sqlite3:db.sqlite3")
 
 class Post
   include DataMapper::Resource
